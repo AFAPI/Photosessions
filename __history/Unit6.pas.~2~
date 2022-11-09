@@ -1,0 +1,68 @@
+unit Unit6;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TChoiseTest = class(TForm)
+    RadioButton1: TRadioButton;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    procedure BitBtn2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ChoiseTest: TChoiseTest;
+   f:text;
+   s:string;
+   ball:integer;
+   Nvern:integer;
+
+
+implementation
+
+{$R *.dfm}
+
+uses Unit1, Unit7;
+
+procedure TChoiseTest.BitBtn2Click(Sender: TObject);
+begin
+if RadioButton1.Checked then
+begin
+    Form1.Hide;
+   Form7.Free;
+    Application.CreateForm(TForm7, Form7);
+   Form7.Show;
+    ChoiseTest.Close;
+   Form7.Caption := '“ест по »стории Blender';
+    Form7.Button1.Enabled:=True;
+    AssignFile(f ,'C:\Users\Kirill\Desktop\роект номер2\Win32\Debug\variant1.txt');
+    reset(f); //ќткрываем файл дл€ чтени€
+    readln(f,s); //—читываем первую строку из файла
+    ball:=0;
+    repeat
+      if (s[1]='-') then
+        begin //≈сли первый символ строки С-С значит это вопрос
+        delete(s,1,1);
+        Form7.RadioGroup1.Caption:=s;
+        end
+      else
+        if s[1]='*' then
+        begin //≈сли перв символ С*Т значит это номер верного ответа
+        delete(s,1,1);
+        Nvern:=StrToInt(s);
+        end
+      else
+      Form7.RadioGroup1.Items.Add(s); //»наче это вариант ответа
+      readln(f,s); //—читываем следующую строку из файла
+      until (s[1]='-') or (Eof(f));
+      end;
+end;
+end.

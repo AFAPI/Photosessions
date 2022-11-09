@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-06-25T11:28:36.876+03:00" lasteditedby="Kirill" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>об авторе </title>
+  <body>
+    <header>
+      <para styleclass="Heading1">об авторе </para>
+    </header>
+    <para styleclass="Normal">Разработчик:Кравчук Кирилл </para>
+    <para styleclass="Normal">учайщийся в учереждении образования &quot;Гродненский Государственный Политехнический Колледж&quot;</para>
+    <para styleclass="Normal">Специальность:2-40 01 01 &quot;Программное обеспечение информационных технологий&quot;</para>
+  </body>
+</topic>

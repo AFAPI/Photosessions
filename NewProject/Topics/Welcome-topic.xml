@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-06-25T12:03:25.764+03:00" lasteditedby="Kirill" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>функционал</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">функционал</para>
+    </header>
+    <para styleclass="Normal"><text style="font-size:14pt; font-weight:bold;">Данное электронное средство обучения разрабатывалось для всех пользователей желающих изучить основы фотосессий и настройки фотоаппарата</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">При запуске нашей программы нас встречает загрузочный экран</text></para>
+    <para styleclass="Normal"><image src="clip0001.png" scale="32.96%" width="633" height="356" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">После загрузочного экрана , мы переходим на главный экран . На главном экране распологается 3 кнопки: Виды фотосессий , видеоматериал , тест.</text></para>
+    <para styleclass="Normal"><image src="clip0002.png" scale="32.74%" width="629" height="354" styleclass="Image Caption" style="font-size:14pt;"></image></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">При нажатий на кнопку &quot;Виды фотосессий&quot; мы переходим на WEB-страницу , в которой есть вся информация про виды фотосессии.</text></para>
+    <para styleclass="Normal"><image src="clip0003.png" scale="32.74%" width="629" height="354" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">при желаний выйти с этой страницы , можно нажать на кнопку &quot;назад&quot; , при нажатии которой мы перейдём обратно на главную форму.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">Находясь на главной форме &#160;и при нажатии на кнопку &quot;Видеоматериал&quot; , мы переходим на следующую форму &#160;на которой при нажатии кнопки &quot;Открыть&quot; запускается видео</text></para>
+    <para styleclass="Normal"><image src="clip0005.png" scale="39.85%" width="765" height="430" styleclass="Image Caption"></image></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text styleclass="Image Caption" style="font-size:14pt; font-weight:normal;">С видео мы можем делать следующие действия: запуск, остановка видео и начать заново.</text></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">Чтобы вернуться на главную форму, нам нужно нажать на кнопку &quot;назад&quot;.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">На главной форме при нажатии на кнопку &quot;Тест&quot; мы переходим на форму &#160;с тестом , который можно пройти </text></para>
+    <para styleclass="Normal"><image src="clip0006.png" scale="39.41%" width="757" height="426" styleclass="Image Caption"></image><text style="font-size:14pt;">&#32;</text></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">Выбрав свой вариант ответа нужно нажать на кнопку &quot;далее&quot;, при нажатии которой мы перейдем к следующему вопросу .</text></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">Когда вы пройдёте весь тест вам выведет на экран правильное количество ответов .</text></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">При нажатии кнопки &quot;назад&quot; мы перейдём на главную форму.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">На главной форме есть меню , в которой находятся следующие кнопки: &quot;Выход&quot;-при нажатии этой кнопки мы выйдем полностью с проекта </text></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">(электронного средства обучения).</text></para>
+    <para styleclass="Normal"><text style="font-size:14pt;">&quot;О программе&quot;- при нажатии на эту кнопку выведется информация о этом электронном виде обчения и его функционал.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal"></para>
+  </body>
+</topic>

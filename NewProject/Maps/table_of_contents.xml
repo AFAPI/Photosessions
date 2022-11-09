@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XInclude">
+  <topicref type="topic" id="447372789331275" build="ALL" modified="2022-06-25T11:06:07.996Z" icon="0" href="Introduction">
+    <caption translate="true">справка</caption>
+    <topicref type="topic" id="44736097150018" build="ALL" modified="2022-06-25T11:06:18.749Z" icon="0" href="Welcome-topic">
+      <caption translate="true">функционал</caption>
+    </topicref>
+    <topicref type="topic" id="447374669967454" build="ALL" modified="2022-06-25T10:44:07.535Z" icon="0" href="Second-topic">
+      <caption translate="true">об авторе </caption>
+    </topicref>
+  </topicref>
+</map>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-06-25T11:06:08.019+03:00" lasteditedby="Kirill" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>справка</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">меню</para>
+    </header>
+    <para styleclass="Normal">о программе </para>
+    <para styleclass="Normal">об авторе </para>
+  </body>
+</topic>

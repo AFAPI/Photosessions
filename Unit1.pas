@@ -1,0 +1,151 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
+  Vcl.StdCtrls, Vcl.Menus, Vcl.Imaging.pngimage,ShellAPI;
+
+type
+  TForm1 = class(TForm)
+    Image1: TImage;
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    Image2: TImage;
+    Image3: TImage;
+    Image4: TImage;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    procedure FormCreate(Sender: TObject);
+    procedure N1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Image4Click(Sender: TObject);
+    procedure Image3Click(Sender: TObject);
+    procedure Image2Click(Sender: TObject);
+    procedure Image4MouseEnter(Sender: TObject);
+    procedure Image4MouseLeave(Sender: TObject);
+    procedure Image3MouseEnter(Sender: TObject);
+    procedure Image3MouseLeave(Sender: TObject);
+    procedure Image2MouseEnter(Sender: TObject);
+    procedure Image2MouseLeave(Sender: TObject);
+    procedure N4Click(Sender: TObject);
+    procedure N3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2, Unit3, Unit4,   Unit7;
+
+procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+application.Terminate;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+windowState:=wsMaximized;
+Image1.Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'photo\backgroundmain.jpg');
+Image3.Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'photo\videobutton.png');
+Image4.Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'photo\photobutton.png');
+Image2.Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'photo\testbutton.png');
+end;
+
+procedure TForm1.Image2Click(Sender: TObject);
+begin
+  Form1.Hide;
+
+    Application.CreateForm(TForm7, Form7);
+   Form7.Show;
+
+   Form7.Caption := 'ѕроведение фотосессии + настройка фотоаппарата';
+    Form7.Button1.Enabled:=True;
+    AssignFile(f ,ExtractFilePath(Paramstr(0))+'variant1.txt');
+    reset(f); //ќткрываем файл дл€ чтени€
+    readln(f,s); //—читываем первую строку из файла
+    ball:=0;
+    repeat
+      if (s[1]='-') then
+        begin //≈сли первый символ строки С-С значит это вопрос
+        delete(s,1,1);
+        Form7.RadioGroup1.Caption:=s;
+        end
+      else
+        if s[1]='*' then
+        begin //≈сли перв символ С*Т значит это номер верного ответа
+        delete(s,1,1);
+        Nvern:=StrToInt(s);
+        end
+      else
+      Form7.RadioGroup1.Items.Add(s); //»наче это вариант ответа
+      readln(f,s); //—читываем следующую строку из файла
+      until (s[1]='-') or (Eof(f));
+end;
+
+procedure TForm1.Image2MouseEnter(Sender: TObject);
+begin
+  if(Image2.Proportional=True) then Image2.Proportional:=False;
+end;
+
+procedure TForm1.Image2MouseLeave(Sender: TObject);
+begin
+  if(Image2.Proportional=False) then Image2.Proportional:=True;
+end;
+
+procedure TForm1.Image3Click(Sender: TObject);
+begin
+  Form1.Hide;
+  Form4.Showmodal;
+end;
+
+procedure TForm1.Image3MouseEnter(Sender: TObject);
+begin
+  if(Image3.Proportional=True) then Image3.Proportional:=False;
+end;
+
+procedure TForm1.Image3MouseLeave(Sender: TObject);
+begin
+  if(Image3.Proportional=False) then Image3.Proportional:=True;
+end;
+
+procedure TForm1.Image4Click(Sender: TObject);
+begin
+  Form1.Hide;
+  Form3.Show;
+end;
+
+procedure TForm1.Image4MouseEnter(Sender: TObject);
+begin
+  if(Image4.Proportional=True) then Image4.Proportional:=False;
+end;
+
+procedure TForm1.Image4MouseLeave(Sender: TObject);
+begin
+  if(Image4.Proportional=False) then Image4.Proportional:=True;
+end;
+
+procedure TForm1.N1Click(Sender: TObject);
+begin
+ Form1.Close;
+end;
+
+procedure TForm1.N3Click(Sender: TObject);
+begin
+ShellExecute(0,PChar('Open'),PChar(ExtractFilePath(Application.ExeName)+'kursovaya.chm'),nil,nil,SW_SHOW);
+end;
+
+procedure TForm1.N4Click(Sender: TObject);
+begin
+ShellExecute(Handle, 'open', 'kursovaya1.chm',nil,nil,SW_SHOW);
+end;
+
+end.
